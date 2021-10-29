@@ -113,7 +113,7 @@ GtkWidget *entry_for_input_expression;
 
 bool sprawdzWyrazenie(char* expression){
 	reset_data_to_validation();
-	strcpy(BUFFOR,expression); 
+	sprintf(BUFFOR , "%s\n\n", expression);
 	biezacy_symbol = BUFFOR[indeks];
 	S();
 	int diff = strcmp(BUFFOR_OF_ERROR, EMPTY_STR);
